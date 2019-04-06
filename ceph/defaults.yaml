@@ -12,6 +12,7 @@ ceph:
     file: /etc/ceph/ceph.conf
     global:
       authentication_type: 'cephx'
+      rbd_default_features: 3 # see: https://tracker.ceph.com/issues/15000
   mon_hosts: []
   osds:
     active: []
